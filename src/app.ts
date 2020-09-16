@@ -1,17 +1,14 @@
-type Size = "small" | "medium" | "large";
-type Callback = (size: Size) => void;
+type Pizza = { name: string; toppings: number };
 
-let size: Size = "small";
+const pizza: Pizza = { name: "Harry Potter", toppings: 5 };
 
-console.log(size);
-const makeSize = (newSize: Size): void => {
-  size = newSize;
-};
+const jsonPizza = JSON.stringify(pizza);
 
-makeSize("medium");
-console.log(size);
+console.log(pizza);
+console.log(jsonPizza);
 
-const selectSize: Callback = (x) => (size = x);
+function getNameFromJSON(obj: string): string {
+  return (<Pizza>JSON.parse(obj)).name;
+}
 
-selectSize("large");
-console.log(size);
+console.log(getNameFromJSON(jsonPizza));
