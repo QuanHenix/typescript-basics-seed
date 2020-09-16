@@ -1,22 +1,12 @@
 "use strict";
-const pizza = {
-  name: "Harry Potter",
-  price: 15,
-  getName() {
-    return pizza.name;
-  },
+var __spreadArrays = (this && this.__spreadArrays) || function () {
+    for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;
+    for (var r = Array(s), k = 0, i = 0; i < il; i++)
+        for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)
+            r[k] = a[j];
+    return r;
 };
-
-console.log(pizza.getName());
-
-const toppings = ["pepperoni"];
-
-const order = { pizza, toppings };
-
-console.log(order);
-
-function createOrder(pizza, toppings) {
-  return { pizza, toppings };
-}
-
-console.log(createOrder(pizza, toppings));
+var actors = ["Harry Potter"];
+var newActors = ["Ron Weasley", "Hermione Granger"];
+var allActors = __spreadArrays(newActors, actors);
+console.log(allActors);

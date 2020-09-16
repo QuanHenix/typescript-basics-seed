@@ -1,8 +1,7 @@
-function addAll(message: string, ...arr: number[]) {
-  console.log(message);
-  return arr.reduce((prev, next) => prev + next);
-}
+const actors = ["Harry Potter"];
 
-const sum = addAll("Hello", 1, 2, 3, 4, 5, 6, 7, 8, 9);
+const newActors = ["Ron Weasley", "Hermione Granger"];
 
-console.log(sum);
+const allActors = [...newActors, ...actors];
+
+console.log(allActors);
