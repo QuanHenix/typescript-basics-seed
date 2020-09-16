@@ -1,7 +1,19 @@
-const actors = ["Harry Potter"];
+const film = {
+  name: "Harry Potter",
+  mainChar: "Harry Potter",
+};
 
-const newActors = ["Ron Weasley", "Hermione Granger"];
+const friends = ["Ron Weasley", "Hermione Granger"];
 
-const allActors = [...newActors, ...actors];
+const allActors = { ...film, friends };
 
-console.log(allActors);
+const finalActors = { ...allActors };
+
+// console.log(allActors);
+// console.log(finalActors);
+
+const assignObject = Object.assign({}, film, { friends });
+console.log(assignObject);
+
+const spreadObject = { ...film, friends };
+console.log(spreadObject);
