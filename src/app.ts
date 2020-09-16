@@ -1,9 +1,10 @@
-let addSum = (price: number, number: number): number => {
-  return price * number;
-};
+let sizes: number[] = [1.2, 3, -4.5];
 
-let addSum2: (price: number, number?: number) => number;
-addSum2 = (x, y = 1) => x + y;
+let names: Array<String>;
 
-console.log(addSum(20, 5));
-console.log(addSum2(20));
+names = ["Harry", "Ron", "Hermione"];
+
+let tuple = ["harry", 15, 10, true, false, [1], null, undefined, {}];
+
+let declaredArr: [number | string];
+declaredArr = ["12.5"];
