@@ -1,7 +1,7 @@
-let pizza: string = "pepperoni";
+let pizza: string | undefined | null = "pepperoni";
 
 function changePizzaName(newPizza: string): any {
-  pizza = newPizza;
+  pizza = null;
 }
 
 console.log(changePizzaName("mageritta"));
