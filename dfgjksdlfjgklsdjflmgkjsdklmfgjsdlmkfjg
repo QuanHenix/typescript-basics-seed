@@ -1,0 +1,41 @@
+[33mcommit f388013bdb54b0a08f9d186e21222bc64b2946cd[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: QuanHenix <mqtran@henix.fr>
+Date:   Wed Sep 16 11:53:59 2020 +0200
+
+    object and array destructuring
+
+[33mcommit a1f91ae6ef6caa0842c2e9987439aa32455ba2a5[m
+Author: QuanHenix <mqtran@henix.fr>
+Date:   Wed Sep 16 11:31:13 2020 +0200
+
+    object spread operator
+
+[33mcommit c70b63e463c363e488547b9d927056010dd9b666[m
+Author: QuanHenix <60783976+QuanHenix@users.noreply.github.com>
+Date:   Wed Sep 16 11:08:59 2020 +0200
+
+    remove generated js file
+
+[33mcommit 74e47fc026fb19ea18ffa73afb56d0bbde0c9738[m
+Author: QuanHenix <mqtran@henix.fr>
+Date:   Wed Sep 16 11:06:07 2020 +0200
+
+    array spread operator
+
+[33mcommit 11b0b8118f07b304218defa2e08d1e45e5b209c3[m
+Author: QuanHenix <mqtran@henix.fr>
+Date:   Wed Sep 16 10:58:00 2020 +0200
+
+    rest parameter
+
+[33mcommit 86fd39f0a414880735045255953ced05117466f0[m
+Author: QuanHenix <mqtran@henix.fr>
+Date:   Wed Sep 16 10:34:38 2020 +0200
+
+    update gitignore
+
+[33mcommit 01e4aab6cefb9f2c04cbc5cd79eef3ca0898edf9[m
+Author: QuanHenix <mqtran@henix.fr>
+Date:   Wed Sep 16 10:18:39 2020 +0200
+
+    first commit
