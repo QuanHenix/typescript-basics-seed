@@ -1,19 +1,26 @@
-const film = {
-  name: "Harry Potter",
-  mainChar: "Harry Potter",
+//object destructuring
+const pizza = {
+  name: "pepperoni",
+  toppings: ["pepperoni"],
 };
 
-const friends = ["Ron Weasley", "Hermione Granger"];
+function order({ name: newName, toppings: newToppings }) {
+  return { newName, newToppings, price: 14 };
+}
 
-const allActors = { ...film, friends };
+// console.log(order(pizza).price);
 
-const finalActors = { ...allActors };
+const { price } = order(pizza);
+// console.log(price);
 
-// console.log(allActors);
-// console.log(finalActors);
+//array destructuring
+const topppings = ["pepperoni", "bacon", "chili"];
 
-const assignObject = Object.assign({}, film, { friends });
-console.log(assignObject);
+const [a, b, c] = topppings;
+console.log(a, b, c);
 
-const spreadObject = { ...film, friends };
-console.log(spreadObject);
+function logToppings([a, b, c]: any) {
+  console.log(a, b + c);
+}
+
+logToppings(topppings);
