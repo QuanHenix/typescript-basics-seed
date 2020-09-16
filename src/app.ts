@@ -1,10 +1,17 @@
-let sizes: number[] = [1.2, 3, -4.5];
+type Size = "small" | "medium" | "large";
+type Callback = (size: Size) => void;
 
-let names: Array<String>;
+let size: Size = "small";
 
-names = ["Harry", "Ron", "Hermione"];
+console.log(size);
+const makeSize = (newSize: Size): void => {
+  size = newSize;
+};
 
-let tuple = ["harry", 15, 10, true, false, [1], null, undefined, {}];
+makeSize("medium");
+console.log(size);
 
-let declaredArr: [number | string];
-declaredArr = ["12.5"];
+const selectSize: Callback = (x) => (size = x);
+
+selectSize("large");
+console.log(size);
