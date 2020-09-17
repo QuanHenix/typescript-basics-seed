@@ -1,5 +1,5 @@
-class Size {
-  constructor(public sizes: string[]) {}
+abstract class Size {
+  constructor(protected sizes: string[]) {}
 
   get availableSizes() {
     return this.sizes;
@@ -10,16 +10,23 @@ class Size {
   }
 }
 
-let size = new Size(["small", "medium"]);
+class Pizza extends Size {
+  constructor(private name: string, sizes: string[]) {
+    super(sizes);
+  }
 
-console.log(size.availableSizes);
+  updateSize(newSize: string[]) {
+    this.sizes = newSize;
+  }
+}
 
-size.availableSizes = ["small", "medium", "large"];
+const pizza = new Pizza("pepperoni", ["large", "small"]);
+console.log(pizza.availableSizes);
 
-console.log(size.availableSizes);
+pizza.availableSizes = ["small", "medium", "large"];
 
-console.log(size.sizes);
+console.log(pizza.availableSizes);
 
-size.sizes = ["extra-big"];
+pizza.updateSize(["extra-big-only"]);
 
-console.log(size.sizes);
+console.log(pizza.availableSizes);
