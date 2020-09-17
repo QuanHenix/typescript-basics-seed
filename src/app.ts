@@ -1,14 +1,25 @@
-class Pizza {
-  toppings: string[] = [];
+class Size {
+  constructor(public sizes: string[]) {}
 
-  constructor(private name: string, readonly price: number) {}
+  get availableSizes() {
+    return this.sizes;
+  }
 
-  addToppings(topping: string) {
-    this.toppings.push(topping);
+  set availableSizes(newSize: string[]) {
+    this.sizes = newSize;
   }
 }
 
-const pizza = new Pizza("Pepperoni", 15);
-pizza.addToppings("pepperoni");
+let size = new Size(["small", "medium"]);
 
-console.log(pizza.price);
+console.log(size.availableSizes);
+
+size.availableSizes = ["small", "medium", "large"];
+
+console.log(size.availableSizes);
+
+console.log(size.sizes);
+
+size.sizes = ["extra-big"];
+
+console.log(size.sizes);
